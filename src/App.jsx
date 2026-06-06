@@ -4,6 +4,8 @@ import User from "./User";
 import Callback from "./Callback";
 import {useState, useEffect,createContext} from "react";
 import Form from "./Form";
+import Regiter from "./Register";
+import Login from "./Login";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 export const ThemeContext = createContext();
 function App(){
@@ -62,6 +64,8 @@ function App(){
           <Route path="/user" element={<User />} />
           <Route path="/callback" element={<Callback />} />
           <Route path="/form" element={<Form />} />
+          <Route path="/register" element={<Regiter />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
       </ThemeContext.Provider>
