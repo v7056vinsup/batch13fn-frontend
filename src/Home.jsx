@@ -3,6 +3,7 @@ import "./Home.css";
 import { ThemeContext } from "./App";
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
+
 export function Home(){
     const {theme, setTheme} = useContext(ThemeContext);
     const [formData, setFormData] = useState({

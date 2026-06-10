@@ -6,6 +6,7 @@ import {useState, useEffect,createContext} from "react";
 import Form from "./Form";
 import Regiter from "./Register";
 import Login from "./Login";
+import Red from "./Red";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 export const ThemeContext = createContext();
 function App(){
@@ -66,7 +67,8 @@ function App(){
           <Route path="/form" element={<Form />} />
           <Route path="/register" element={<Regiter />} />
           <Route path="/login" element={<Login />} />
-        </Routes>
+          <Route path="/red" element={<Red />} />
+          </Routes>
       </BrowserRouter>
       </ThemeContext.Provider>
   )
